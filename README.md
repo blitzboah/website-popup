@@ -4,12 +4,6 @@ to stop f**king around with time
 
 This Chrome extension displays a custom popup on specified websites.
 
-## Features
-
-- Add multiple websites where the popup should appear
-- Customizable popup content
-- Easy to use interface for managing websites
-
 ## Installation
 
 1. Clone this repository or download the ZIP file and extract it.
