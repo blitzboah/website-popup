@@ -1,5 +1,5 @@
 # website-popup
-to stop f**king around with time
+to stop f**king around with time, also i'm lazy to add in extension store.
 # Custom Popup Chrome Extension
 
 This Chrome extension displays a custom popup on specified websites.
