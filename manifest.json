@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Image Popup Extension",
+  "version": "1.0",
+  "description": "Shows an image popup when opening eg.X",
+  "permissions": [
+    "https://x.com/home",
+    "https://www.4chan.org/index.php"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/home","https://www.4chan.org/index.php"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "popup.png"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
