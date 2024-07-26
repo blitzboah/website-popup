@@ -14,6 +14,9 @@ function showPopup() {
     text-align: center;
     font-family: Arial, sans-serif;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 60vw;  // Added width
+    max-width: 600px;  // Increased max-width
   `;
 
   const img = document.createElement('img');
@@ -53,6 +56,16 @@ function showPopup() {
   
   popup.appendChild(closeButton);
   document.body.appendChild(popup);
+
+  // After 10 seconds, enable the close button functionality
+  setTimeout(() => {
+    closeButton.onclick = () => popup.remove();
+    closeButton.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
+  }, 10000); 
 }
 
-window.addEventListener('load', showPopup);
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', showPopup);
+} else {
+  showPopup();
+}
