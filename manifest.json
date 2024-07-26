@@ -14,7 +14,7 @@
     }
   ],
   "web_accessible_resources": [
-    "popup.png"
+    "new_popup_image.png"
   ],
   "browser_action": {
     "default_popup": "popup.html"
